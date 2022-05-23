@@ -1,6 +1,6 @@
-from TGN  import dispatcher
-from TGN.modules.disable import DisableAbleCommandHandler
-from TGN.modules.helper_funcs.alternate import typing_action
+from TGNRobot import dispatcher
+from TGNRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
@@ -32,119 +32,65 @@ normiefont = [
     "y",
     "z",
 ]
-weebyfont = [
-    "卂",
-    "乃",
-    "匚",
-    "刀",
-    "乇",
-    "下",
-    "厶",
-    "卄",
-    "工",
-    "丁",
-    "长",
-    "乚",
-    "从",
-    "𠘨",
-    "口",
-    "尸",
-    "㔿",
-    "尺",
-    "丂",
-    "丅",
-    "凵",
-    "リ",
-    "山",
-    "乂",
-    "丫",
-    "乙",
+
+text1font = [
+    "ᵃ",
+    "ᵇ",
+    "ᶜ",
+    "ᵈ",
+    "ᵉ",
+    "ᶠ",
+    "ᵍ",
+    "ʰ",
+    "ⁱ",
+    "ʲ",
+    "ᵏ",
+    "ˡ",
+    "ᵐ",
+    "ⁿ",
+    "ᵒ",
+    "ᵖ",
+    "ᵠ",
+    "ʳ",
+    "ˢ",
+    "ᵗ",
+    "ᵘ",
+    "ᵛ",
+    "ʷ",
+    "ˣ",
+    "ʸ",
+    "ᶻ",
 ]
-bubblefont = [
-    "ⓐ",
-    "ⓑ",
-    "ⓒ",
-    "ⓓ",
-    "ⓔ",
-    "ⓕ",
-    "ⓖ",
-    "ⓗ",
-    "ⓘ",
-    "ⓙ",
-    "ⓚ",
-    "ⓛ",
-    "ⓜ",
-    "ⓝ",
-    "ⓞ",
-    "ⓟ",
-    "ⓠ",
-    "ⓡ",
-    "ⓢ",
-    "ⓣ",
-    "ⓤ",
-    "ⓥ",
-    "ⓦ",
-    "ⓧ",
-    "ⓨ",
-    "ⓩ",
+text2font = [
+    "𝞚",
+    "𝘽",
+    "𝘾",
+    "𝘿",
+    "𝙀",
+    "𝙁",
+    "𝙂",
+    "𝙃",
+    "𝙄",
+    "𝙅",
+    "𝙆",
+    "𝙇",
+    "𝙈",
+    "𝙉",
+    "𝙊",
+    "𝙋",
+    "𝙌",
+    "𝙍",
+    "𝙎",
+    "𝙏",
+    "𝙐",
+    "𝙑",
+    "𝙒",
+    "𝙓",
+    "𝙔",
+    "𝙕",
 ]
-fbubblefont = [
-    "🅐",
-    "🅑",
-    "🅒",
-    "🅓",
-    "🅔",
-    "🅕",
-    "🅖",
-    "🅗",
-    "🅘",
-    "🅙",
-    "🅚",
-    "🅛",
-    "🅜",
-    "🅝",
-    "🅞",
-    "🅟",
-    "🅠",
-    "🅡",
-    "🅢",
-    "🅣",
-    "🅤",
-    "🅥",
-    "🅦",
-    "🅧",
-    "🅨",
-    "🅩",
-]
-squarefont = [
-    "🄰",
-    "🄱",
-    "🄲",
-    "🄳",
-    "🄴",
-    "🄵",
-    "🄶",
-    "🄷",
-    "🄸",
-    "🄹",
-    "🄺",
-    "🄻",
-    "🄼",
-    "🄽",
-    "🄾",
-    "🄿",
-    "🅀",
-    "🅁",
-    "🅂",
-    "🅃",
-    "🅄",
-    "🅅",
-    "🅆",
-    "🅇",
-    "🅈",
-    "🅉",
-]
-fsquarefont = [
+
+text3font = [
     "🅰",
     "🅱",
     "🅲",
@@ -172,7 +118,7 @@ fsquarefont = [
     "🆈",
     "🆉",
 ]
-bluefont = [
+text4font = [
     "🇦 ",
     "🇧 ",
     "🇨 ",
@@ -200,66 +146,40 @@ bluefont = [
     "🇾 ",
     "🇿 ",
 ]
-latinfont = [
-    "𝒶",
-    "𝒷",
-    "𝒸",
-    "𝒹",
-    "ℯ",
-    "𝒻",
-    "ℊ",
-    "𝒽",
-    "𝒾",
-    "𝒿",
-    "𝓀",
-    "𝓁",
-    "𝓂",
-    "𝓃",
-    "ℴ",
-    "𝓅",
-    "𝓆",
-    "𝓇",
-    "𝓈",
-    "𝓉",
-    "𝓊",
-    "𝓋",
-    "𝓌",
-    "𝓍",
-    "𝓎",
-    "𝓏",
-]
-linedfont = [
-    "𝕒",
-    "𝕓",
-    "𝕔",
-    "𝕕",
-    "𝕖",
-    "𝕗",
-    "𝕘",
-    "𝕙",
-    "𝕚",
-    "𝕛",
-    "𝕜",
-    "𝕝",
-    "𝕞",
-    "𝕟",
-    "𝕠",
-    "𝕡",
-    "𝕢",
-    "𝕣",
-    "𝕤",
-    "𝕥",
-    "𝕦",
-    "𝕧",
-    "𝕨",
-    "𝕩",
-    "𝕪",
-    "𝕫",
+
+text5font = [
+    "ᴧ",
+    "ʙ",
+    "ᴄ",
+    "ᴅ",
+    "ᴇ",
+    "ғ",
+    "ᏻ",
+    "ʜ",
+    "ɪ",
+    "ᴊ",
+    "ᴋ",
+    "ʟ",
+    "ᴍ",
+    "ɴ",
+    "ᴏ",
+    "ᴘ",
+    "ҩ",
+    "ʀ",
+    "s",
+    "ᴛ",
+    "ᴜ",
+    "ᴠ",
+    "ᴡ",
+    "x",
+    "ʏ",
+    "ᴢ",
 ]
 
 
+@run_async
 @typing_action
-def weebify(update, context):
+def text1(update, context):
     args = context.args
     message = update.effective_message
     string = ""
@@ -271,13 +191,13 @@ def weebify(update, context):
         string = "  ".join(args).lower()
 
     if not string:
-        message.reply_text("Usage is `/weebify <text>`", parse_mode=ParseMode.MARKDOWN)
+        message.reply_text("plz reply to the text.", parse_mode=ParseMode.MARKDOWN)
         return
 
     for normiecharacter in string:
         if normiecharacter in normiefont:
-            weebycharacter = weebyfont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, weebycharacter)
+            text1character = text1font[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, text1character)
 
     if message.reply_to_message:
         message.reply_to_message.reply_text(string)
@@ -285,8 +205,9 @@ def weebify(update, context):
         message.reply_text(string)
 
 
+@run_async
 @typing_action
-def bubble(update, context):
+def text2(update, context):
     args = context.args
     message = update.effective_message
     string = ""
@@ -298,13 +219,13 @@ def bubble(update, context):
         string = "  ".join(args).lower()
 
     if not string:
-        message.reply_text("Usage is `/bubble <text>`", parse_mode=ParseMode.MARKDOWN)
+        message.reply_text("plz reply to the text.", parse_mode=ParseMode.MARKDOWN)
         return
 
     for normiecharacter in string:
         if normiecharacter in normiefont:
-            bubblecharacter = bubblefont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, bubblecharacter)
+            text2character = text2font[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, text2character)
 
     if message.reply_to_message:
         message.reply_to_message.reply_text(string)
@@ -312,8 +233,9 @@ def bubble(update, context):
         message.reply_text(string)
 
 
+@run_async
 @typing_action
-def fbubble(update, context):
+def text3(update, context):
     args = context.args
     message = update.effective_message
     string = ""
@@ -325,13 +247,13 @@ def fbubble(update, context):
         string = "  ".join(args).lower()
 
     if not string:
-        message.reply_text("Usage is `/fbubble <text>`", parse_mode=ParseMode.MARKDOWN)
+        message.reply_text("plz reply to the text.", parse_mode=ParseMode.MARKDOWN)
         return
 
     for normiecharacter in string:
         if normiecharacter in normiefont:
-            fbubblecharacter = fbubblefont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, fbubblecharacter)
+            text3character = text3font[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, text3character)
 
     if message.reply_to_message:
         message.reply_to_message.reply_text(string)
@@ -339,8 +261,9 @@ def fbubble(update, context):
         message.reply_text(string)
 
 
+@run_async
 @typing_action
-def square(update, context):
+def text4(update, context):
     args = context.args
     message = update.effective_message
     string = ""
@@ -352,13 +275,13 @@ def square(update, context):
         string = "  ".join(args).lower()
 
     if not string:
-        message.reply_text("Usage is `/square <text>`", parse_mode=ParseMode.MARKDOWN)
+        message.reply_text("plz reply to the text.", parse_mode=ParseMode.MARKDOWN)
         return
 
     for normiecharacter in string:
         if normiecharacter in normiefont:
-            squarecharacter = squarefont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, squarecharacter)
+            text4character = text4font[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, text4character)
 
     if message.reply_to_message:
         message.reply_to_message.reply_text(string)
@@ -366,8 +289,9 @@ def square(update, context):
         message.reply_text(string)
 
 
+@run_async
 @typing_action
-def fsquare(update, context):
+def text5(update, context):
     args = context.args
     message = update.effective_message
     string = ""
@@ -379,133 +303,51 @@ def fsquare(update, context):
         string = "  ".join(args).lower()
 
     if not string:
-        message.reply_text("Usage is `/fsquare <text>`", parse_mode=ParseMode.MARKDOWN)
+        message.reply_text("plz reply to the text.", parse_mode=ParseMode.MARKDOWN)
         return
 
     for normiecharacter in string:
         if normiecharacter in normiefont:
-            fsquarecharacter = fsquarefont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, fsquarecharacter)
+            text5character = text5font[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, text5character)
 
     if message.reply_to_message:
         message.reply_to_message.reply_text(string)
-    else:
-        message.reply_text(string)
+            
+__help__ = """
+
+ 🜏 `/text1`*:* reply to the text.
+ 🜏 `/text2`*:* reply to the text.
+ 🜏 `/text3`*:* reply to the text.
+ 🜏 `/text4`*:* reply to the text.
+ 🜏 `/text5`*:* reply to the text.
+"""
+__mod_name__ = "sᴛʏʟᴇᴛᴇxᴛ"
+
+TEXT1_HANDLER = DisableAbleCommandHandler("text1", text1)
+TEXT2_HANDLER = DisableAbleCommandHandler("text2", text2)
+TEXT3_HANDLER = DisableAbleCommandHandler("text3", text3)
+TEXT4_HANDLER = DisableAbleCommandHandler("text4", text4)
+TEXT5_HANDLER = DisableAbleCommandHandler("text5", text5)
+
+dispatcher.add_handler(TEXT1_HANDLER)
+dispatcher.add_handler(TEXT2_HANDLER)
+dispatcher.add_handler(TEXT3_HANDLER)
+dispatcher.add_handler(TEXT4_HANDLER)
+dispatcher.add_handler(TEXT5_HANDLER)
+
+__command_list__ = ["text1"]
+__command_list__ = ["text2"]
+__command_list__ = ["text3"]
+__command_list__ = ["text4"]
+__command_list__ = ["text5"]
+
+__handlers__ = [TEXT1_HANDLER]
+__handlers__ = [TEXT2_HANDLER]
+__handlers__ = [TEXT3_HANDLER]
+__handlers__ = [TEXT4_HANDLER]
+__handlers__ = [TEXT5_HANDLER]
 
 
-@typing_action
-def blue(update, context):
-    args = context.args
-    message = update.effective_message
-    string = ""
-
-    if message.reply_to_message:
-        string = message.reply_to_message.text.lower().replace(" ", "  ")
-
-    if args:
-        string = "  ".join(args).lower()
-
-    if not string:
-        message.reply_text("Usage is `/blue <text>`", parse_mode=ParseMode.MARKDOWN)
-        return
-
-    for normiecharacter in string:
-        if normiecharacter in normiefont:
-            bluecharacter = bluefont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, bluecharacter)
-
-    if message.reply_to_message:
-        message.reply_to_message.reply_text(string)
-    else:
-        message.reply_text(string)
 
 
-@typing_action
-def latin(update, context):
-    args = context.args
-    message = update.effective_message
-    string = ""
-
-    if message.reply_to_message:
-        string = message.reply_to_message.text.lower().replace(" ", "  ")
-
-    if args:
-        string = "  ".join(args).lower()
-
-    if not string:
-        message.reply_text("Usage is `/latin <text>`", parse_mode=ParseMode.MARKDOWN)
-        return
-
-    for normiecharacter in string:
-        if normiecharacter in normiefont:
-            latincharacter = latinfont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, latincharacter)
-
-    if message.reply_to_message:
-        message.reply_to_message.reply_text(string)
-    else:
-        message.reply_text(string)
-
-
-@typing_action
-def lined(update, context):
-    args = context.args
-    message = update.effective_message
-    string = ""
-
-    if message.reply_to_message:
-        string = message.reply_to_message.text.lower().replace(" ", "  ")
-
-    if args:
-        string = "  ".join(args).lower()
-
-    if not string:
-        message.reply_text("Usage is `/lined <text>`", parse_mode=ParseMode.MARKDOWN)
-        return
-
-    for normiecharacter in string:
-        if normiecharacter in normiefont:
-            linedcharacter = linedfont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, linedcharacter)
-
-    if message.reply_to_message:
-        message.reply_to_message.reply_text(string)
-    else:
-        message.reply_text(string)
-
-__mod_name__ = "Styletext"
-
-WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
-BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble, run_async=True)
-FBUBBLE_HANDLER = DisableAbleCommandHandler("fbubble", fbubble, run_async=True)
-SQUARE_HANDLER = DisableAbleCommandHandler("square", square, run_async=True)
-FSQUARE_HANDLER = DisableAbleCommandHandler("fsquare", fsquare, run_async=True)
-BLUE_HANDLER = DisableAbleCommandHandler("blue", blue, run_async=True)
-LATIN_HANDLER = DisableAbleCommandHandler("latin", latin, run_async=True)
-LINED_HANDLER = DisableAbleCommandHandler("lined", lined, run_async=True)
-
-dispatcher.add_handler(WEEBIFY_HANDLER)
-dispatcher.add_handler(BUBBLE_HANDLER)
-dispatcher.add_handler(FBUBBLE_HANDLER)
-dispatcher.add_handler(SQUARE_HANDLER)
-dispatcher.add_handler(FSQUARE_HANDLER)
-dispatcher.add_handler(BLUE_HANDLER)
-dispatcher.add_handler(LATIN_HANDLER)
-dispatcher.add_handler(LINED_HANDLER)
-
-__command_list__ = ["weebify"]
-__command_list__ = ["bubble"]
-__command_list__ = ["fbubble"]
-__command_list__ = ["square"]
-__command_list__ = ["fsquare"]
-__command_list__ = ["blue"]
-__command_list__ = ["latin"]
-__command_list__ = ["lined"]
-__handlers__ = [WEEBIFY_HANDLER]
-__handlers__ = [BUBBLE_HANDLER]
-__handlers__ = [FBUBBLE_HANDLER]
-__handlers__ = [SQUARE_HANDLER]
-__handlers__ = [FSQUARE_HANDLER]
-__handlers__ = [BLUE_HANDLER]
-__handlers__ = [LATIN_HANDLER]
-__handlers__ = [LINED_HANDLER]
