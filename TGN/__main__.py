@@ -81,9 +81,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [GodfatherBot](https://telegra.ph/file/bfa2fbaf65ac04fad78ee.jpg) 」────
-ʜᴇʏ! {}
-ɪ ᴀᴍ 𝐆𝐨𝐝𝐟𝐚𝐭𝐡𝐞𝐫𝐛𝐨𝐭 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
+💋 *ʜᴇʟʟᴏ {} !* 🍻 ɪ ᴀᴍ [sıɴɴᴇʀ `sǫᴜʌᴅ](https://telegra.ph/file/16e9fd60a10a093efd2b8.jpg)
+💋 ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴍᴀɴʏ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs.
+┏━━━━━━━━━━━━━━━━┓
+┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
+┗━━━━━━━━━━━━━━━━┛
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 I have lots of handy features such as:
 ‣ Warning system
@@ -93,46 +95,36 @@ I have lots of handy features such as:
 ‣ Filters keeping system
 ‣ Approvals and much more.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="💕 Add To Your Group 💕", url="t.me/TGN_Ro_bot?startgroup=new"),
-    ],
-    [                  
-                       InlineKeyboardButton(
-                             text="Support👥",
-                             url=f"https://t.me/GodfatherSupport"),
-                       InlineKeyboardButton(
-                             text="Updates📡",
-                             url=f"https://t.me/The_Godfather_Network"),
+            text="🍃⃝⃡͜҉💀ᬼ͜͡𝑶𝒏𝒍𝒚 𝑺𝒊𝒏𝒏𝒆𝒓ོ᪶ 𝑪𝒂𝒏 𝑨𝒅𝒅ྀ᪶͜͡💀⃝⃡͟͞҉🍃", url="t.me/zerosuperbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(
-              text="Help",
-              callback_data="help_back"),
-        InlineKeyboardButton(
-              text="About",
-              callback_data="shukurenai_"),   
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/xxxsquad18plus"),
+        InlineKeyboardButton(text="〝sɪɴ͜͡ɴᴇʀ〞", url=f"https://t.me/lifeinsinn"),
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/dejavu_chat_room"),
     ],
     [
-        InlineKeyboardButton(
-            text="Donate 🌹", 
-            callback_data="shukurenai_donate"),
+        InlineKeyboardButton(text="🜏 ʜᴇʟᴘ ᴄᴏᴍᴍʌɴᴅs 🜏", callback_data="help_back"),
     ],
-
 ]
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+█▀▄▀█ █▀▀ █▄░█ █░█
+█░▀░█ ██▄ █░▀█ █▄█
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ❤️"""
 
 HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """Contact to **@Godfatherakkii**"""
-HELP_IMG = "https://telegra.ph/file/d394e1486b4fa1cfcb322.jpg"
-GROUP_IMG = "https://telegra.ph/file/3f3c3af0e2236daad0dd2.jpg"
+HELP_IMG = "https://telegra.ph/file/844082a513e2a36935df3.mp4"
+GROUP_IMG = "https://telegra.ph/file/844082a513e2a36935df3.mp4"
 
 
 
@@ -249,15 +241,15 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-             GROUP_IMG, caption= "*Hey {},*\n*GodfatherBot is here*\n*Power lavel time* : {} ".format(
+             GROUP_IMG, caption= "*Hey {},*\n*s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ is here*\n*Power lavel time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="✧ Support ", url=f"https://t.me/GodfatherSupport"),
-                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/The_Godfather_Network"),
+                  InlineKeyboardButton(text="✧ Support ", url=f"https://t.me/xproject13"),
+                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/alterbasecam"),
                   ]
                 ]
             ),
@@ -335,7 +327,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Here is the help for the *{}* module:\n".format(
+                "Powered by @lifeinsinn\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -390,14 +382,14 @@ def shukurenai_about_callback(update, context):
     query = update.callback_query
     if query.data == "shukurenai_":
         query.message.edit_text(
-            text="๏ I'm *GODFATHERBOT*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_ GodfatherBot licensed under the GNU General Public License v3.0_"
+            "\n\n_ s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for Anie.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -465,14 +457,14 @@ def shukurenai_about_callback(update, context):
         )
     elif query.data == "shukurenai_support":
         query.message.edit_text(
-            text="*๏ Anie support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on GodfatherBot.",
+            text="*๏ s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/GodfatherSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/The_Godfather_Network"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/xproject13"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/alterbasecam"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -485,15 +477,15 @@ def shukurenai_about_callback(update, context):
 
     elif query.data == "shukurenai_credit":
         query.message.edit_text(
-            text=f"๏ Credis for GodfatherBot\n"
-            "\nHere Developers Making And Give Inspiration For Made The Anie",
+            text=f"๏ Credis for s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ\n"
+            "\nHere Developers Making And Give Inspiration For Made The s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Zaid", url="https://t.me/Timesisnotwaiting"),
-                    InlineKeyboardButton(text="Null", url="https://t.me/Shubhanshutya"),
-                    InlineKeyboardButton(text="Akki", url="https://t.me/Godfatherakki"), 
+                    InlineKeyboardButton(text="dejavu", url="https://t.me/dejavu_chat_room"),
+                    InlineKeyboardButton(text="alternate", url="https://t.me/alterbasecam"),
+                    InlineKeyboardButton(text="onanymous", url="https://t.me/slipcrot"), 
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -503,12 +495,12 @@ def shukurenai_about_callback(update, context):
         )
     elif query.data == "shukurenai_donate":
         query.message.edit_text(
-            text=f"๏ Donate for GodfatherBot",
+            text=f"๏ Donate for s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Razorpay", url="https://rzp.io/l/GODFATHERDONATIONS"),
+                    InlineKeyboardButton(text="s̶ɪ̶ɴ̶ɴ̶ⱔ̶ʀ ꭙ sҩᴜᴧᴅ", url="https://t.me/sinnerxrobot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
@@ -783,7 +775,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 1606221784:
             update.effective_message.reply_text(
                 "I'm free for everyone 😎 If you wanna make me smile, just join"
-                "[My Channel](https://t.me/TGN_Donation_Bot)".format(DONATION_LINK),
+                "[My Channel](https://t.me/xproject13)".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
@@ -827,16 +819,16 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝐈 𝐀𝐦 𝐎𝐧𝐥𝐢𝐧𝐞](https://telegra.ph/file/d394e1486b4fa1cfcb322.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝐈 𝐀𝐦 𝐎𝐧𝐥𝐢𝐧𝐞](https://telegra.ph/file/844082a513e2a36935df3.mp4)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Support👥",
-                             url=f"https://t.me/GodfatherSupport"),
+                             url=f"https://t.me/xproject13"),
                        InlineKeyboardButton(
                              text="Updates📡",
-                             url="https://t.me/The_Godfather_Network")
+                             url="https://t.me/alterbasecam")
                      ] 
                 ]
             ),
