@@ -82,16 +82,16 @@ async def detect_nsfw(_, message):
         return
     await message.reply_text(
         f"""
-**NSFW Image Detected & Deleted Successfully!
+**konten cabul terdeteksi & sukses dihapus!
 ————————————————————————**
-**User:** {message.from_user.mention} [`{message.from_user.id}`]
+**Sagapung:** {message.from_user.mention} [`{message.from_user.id}`]
 **Safe:** `{results.neutral} %`
 **Porn:** `{results.porn} %`
 **Adult:** `{results.sexy} %`
 **Hentai:** `{results.hentai} %`
 **Drawings:** `{results.drawings} %`
 **————————————————————————**
-__Use `/antinsfw off` to disable this.__
+__Sange boleh, Goblok jangan!.__
 """
     )
 
